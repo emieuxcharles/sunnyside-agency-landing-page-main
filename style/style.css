@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+header {
+    height: 100vh;
+    background: url(/images/desktop/image-header.jpg) center/cover;
+}
+
+section {
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+h1, h2 {
+    font-family: "Fraunces", sans-serif;
+    /*font-weight: 900;*/
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 25px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+nav a {
+    color: #FFF;
+}
+
+ul li a {
+    color: white;
+    padding: .5em 1.5em;
+    box-sizing: border-box;
+    transition: .3s;
+ }
+ ul li a:hover {
+    color: black;
+    background: #fff;
+    padding: .5em 1.5em;
+    border-radius: 2em;
+    box-sizing: border-box;
+ }
+
+ 
+
+ul li:last-child a {
+    text-transform: uppercase;
+    color: black;
+    background: #fff;
+    padding: .5em 1.5em;
+    border-radius: 2em;
+    box-sizing: border-box;
+ }
+ ul li:last-child a:hover {
+     background: #6ad3ff;
+     color: #FFF;
+ }
+
+
+#logohead {
+    flex: 2 1 40rem;
+}
+
+
+
+.title img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    margin-top: 25vh;
+}
+.title h1, .title img {
+    display: flex;
+    justify-content: center;
+}
+.title h1 {
+    font-size: 4.4rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    color: white;
+}
+.title img {
+    width: 3rem;
+    margin-top: 10vh;
+}
+
+.img1 {
+    background: url(/images/desktop/image-transform.jpg) center/cover;
+    height: 50vh;
+}
+
+.img2{
+    background: url(/images/desktop/image-stand-out.jpg) center/cover;
+    height: 50vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 150px;
+    background: #fffbf8;
+}
+
+.container h2, .img3 h2, .img4 h2{
+    font-weight: 900;
+    font-size: 1.6rem;
+    letter-spacing: .1em;
+    color: hsl(198, 62%, 26%);
+}
+.container p, .img3 p, .img4 p{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.container a {
+    color: hsl(198, 62%, 26%);
+    font: 1.1em "Fraunces", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-decoration: underline .2rem rgb(255, 217, 0);
+}
+.container a:hover {
+    background-color: rgb(255, 217, 0);
+}
+
+
+.img3container {
+    position: relative;
+    background: url(/images/desktop/image-graphic-design.jpg) center/cover;
+}
+.img4container {
+    position: relative;
+    background: url(/images/desktop/image-photography.jpg) center/cover;
+}
+.img3, .img4{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 5% 20%;
+}
+
+.clients {
+    background: #fffbf8;
+    padding: 10%;
+    text-align: center;
+}
+.clients h2 {
+    margin-bottom: 10%;
+    text-transform: uppercase;
+    color: gray;
+    letter-spacing: .2rem;
+}
+
+.clients-container {
+    display: grid;
+    gap: 10%;    
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.client-card img{
+    border-radius: 50%;
+    height: 5rem;
+    margin-bottom: 10%;
+}
+.client-card p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+}
+.client-card h4 {
+    color: hsl(198, 62%, 26%);
+    margin-top: 20%;
+    margin-bottom: 10%;
+    font: 1.1em "Fraunces", sans-serif;
+    font-weight: 900;
+}
+.client-card span {
+    color: darkgrey;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+
+}
+
+.gallery {
+    min-height: 25vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.gallery1 {
+    background: url(/images/desktop/image-gallery-milkbottles.jpg) center/cover;
+
+}
+.gallery2 {
+    background: url(/images/desktop/image-gallery-orange.jpg) center/cover;
+}
+.gallery3 {
+    background: url(/images/desktop/image-gallery-cone.jpg) center/cover;
+
+}
+.gallery4 {
+    background: url(/images/desktop/image-gallery-sugarcubes.jpg) center/cover;
+}
+
+footer {
+    min-height: 60vh;
+    background: #90d5c6;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30vw;
+    
+}
+
+.contact a {
+    padding: 5vw;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    color: #558076;
+}
+
+footer {
+    text-align: center;
+}
+
+.footerlogo {
+    background-color: #558076;
+    -webkit-mask: url(/images/logo.svg) no-repeat center;
+    mask: url(/images/logo.svg) no-repeat center;
+    min-height: 15vh;
+    padding: 10vh 0 0 0;
+}
+.social a {
+    padding: 50px 20px 0;
+}
